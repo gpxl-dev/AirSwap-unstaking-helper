@@ -86,7 +86,7 @@ export const BalanceAndUnstake = ({
         {hasBalance && !isSuccess && !isError && (
           <button
             disabled={!isConnected || isLoading}
-            onClick={() => !isLoading && write()}
+            onClick={() => !isLoading && write && write()}
             className=" active:bg-violet-500 hover:bg-violet-300 bg-violet-400 rounded-md text-slate-50 font-semibold px-4 py-1 transition-colors disabled:text-opacity-50 flex flex-row items-center gap-2"
           >
             <span>{isLoading ? "Unstaking" : "Unstake"}</span>
