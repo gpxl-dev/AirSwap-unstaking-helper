@@ -19,7 +19,7 @@ export const BalanceAndUnstake = ({
 }) => {
   // This contract needs different args.
   const isDeprecatedV2Staking =
-    contractAddress === "0x704c5818B574358dFB5225563852639151a943ec";
+    contractAddress === "0x704c5818B574358dFB5225563852639151a943ec" || contractAddress === "0x579120871266ccd8De6c85EF59E2fF6743E7CD15";
 
   const { address, isConnected } = useAccount();
 
