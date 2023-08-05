@@ -19,6 +19,16 @@ const LEGACY_CONTRACTS: {
     },
   },
   {
+    address: "0x579120871266ccd8De6c85EF59E2fF6743E7CD15",
+    label: "V2 Staking",
+    unstakeConfig: {
+      abi: [
+        parseAbiItem("function unstake(uint256[] calldata amounts)"),
+      ] as const,
+      functionName: "unstake",
+    },
+  },
+  {
     address: "0xa4C5107184a88D4B324Dd10D98a11dd8037823Fe",
     label: "Legacy v2 Staking",
     unstakeConfig: {
